@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by NatKingCoder (http://jsbin.com/hazeric/19/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>eHub - Entertainment Station</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Courier New";
+      z-index: 4;
+    }
+    details {
+      z-index: 5;
+      float: left;
+      color: black;
+      background-color: white;
+      border: 3px transparent;
+      border-radius: 15px;
+      padding: 15px;
+      cursor: pointer;
+      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19); 
+      position: static;
+    }
+    #menuhead {
+      margin-top: 4%;
+      font-size: 2em;
+      transition-duration: 0.4s;
+    }
+    #menuhead:hover {
+      font-size: 2.5em;
+      transition-duration: 0.4s;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 3%;
+      border: 1px transparent;
+      border-radius: 10px;
+      font-size: 1.5em;
+      transition-duration: 0.4s;
+    }
+    a:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      transition-duration: 0.4s;
+    }
+    .disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    h1 {
+      width: 50vw;
+      padding: 15px;
+      margin-left: 15%;
+      margin: auto;
+      margin-top: 5%;
+      text-align: center;
+      font-size: 400%;
+      text-decoration: underline overline double 3px;  
+      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+      border: 1px transparent;
+      border-radius: 15px;
+      transition-duration: 0.4s;
+    }
+    h1:hover {
+      font-size: 450%;
+      width: 55vw;
+      transition-duration: 0.4s;
+    }
+    #intro {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .textleft {
+     float: left;  
+     border: 2px transparent;
+     background-color: white;
+     color: black;
+     border-radius: 15px;
+     font-size: 1.5em;
+     width: 45%;
+     box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+    }
+    .buttonlink {
+      text-align:center; 
+      margin-right: 3%; 
+      margin-top: 3%;
+    }
+    .textright {
+     float: right;  
+     border: 2px transparent;
+     background-color: white;
+     color: black;
+     border-radius: 15px;
+     font-size: 1.5em;
+     width: 45%;
+     box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);     
+    }
+    div p {
+      margin-left: 5%; margin-right: 2%
+    }
+  </style>
+</head>
+<body>
+  <details>
+    <summary id="menuhead">Menu</summary>
+    <a href="/games" style="margin-top: 7%;" class="disabled">Games</a>
+    <br>
+    <a href="/memes" class="disabled">Memes</a>
+    <br>
+    <a href="/music" class="disabled">Music</a>
+    <br>
+    <a href="/yt" class="disabled">YouTube</a>
+    <br>
+    <a href="/">Home</a>
+  </details>
+  <h1>Welcome to <br>eHub</h1>
+    <p id="intro">eHub is a site where you can find <i>all</i> of your entertainment needs. eHub currently enables you to play old
+    video games, look at spicy memes, listen to music or the radio, and watch YouTube.<br><b>All on the Same Site!</b></p>
+  <div class="textleft">
+    <h2>Video Games</h2>
+    <p>Ever wanted to play some old video games straight from your browser? With 
+      emulatorjs by ethanaobrien, this is now possible! Head over to the game sction to start playing!<br><a href="/games" class="buttonlink disabled">Play Games</a></p>
+  </div>
+  <div class="textright">
+      <h2>Memes</h2>
+      <p>Everyone enjoys a good laugh, and thanks to imgflip's wonderful community,
+        you get fresh memes everyday, right here on eHub! Try not to laugh to hard, I dare you!<br><a href="/memes" class="buttonlink disabled">Veiw Memes</a></p>
+  </div>
+  <br>
+  <div class="textleft" style="margin-top: 10%;">
+    <h2>Music</h2>
+    <p>Using eHub, you can listen to lots of different songs, utilizing soundcloud, or listen to the radio, which is available
+      through iHeartRadio. Happy listening!<br><a href="/music" class="buttonlink disabled">Listen to Music</a></p>
+  </div>
+  <div class="textright" style="margin-top: 10%;">
+    <h2>YouTube</h2>
+    <p>YouTube is great and all, but it has LOTS of ads. Watch on eHub for no adds or distracting comments! Simply
+      paste a youtube link, and your video will start!<br><a href="/YouTube" class="buttonlink disabled">Watch YouTube</a></p>
+  </div>
+</body>   
