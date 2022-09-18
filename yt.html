@@ -30,18 +30,27 @@ Released under the MIT license: http://jsbin.mit-license.org
       <br>
       <a href="/">Home</a>
   </details>
-  <h1>YouTube</h1>
+ <h1>YouTube</h1>
   <br>
   <div class="textleft" style="margin-top: 10%">
     <h2>About this Player</h2>
-    <p>To the right is a simple embedded YouTube player. Simply paste in your YouTube link and enjoy! 
-      Your video will appear below!</p>
+    <p>To the right is a simple embedded YouTube player. Simply paste in your YouTube link and enjoy! To input
+      a playlist, select "Playlist" in the drop down menu below the Get Video button! Your video/playlist will appear below!</p>
   </div>
   <div>
     <input type="url"  value="Paste Link Here..." onfocus="if (this.value == 'Paste Link Here...') {this.value=''}" id="url">
     <button id="button">Get Video</button>
+    <br>
+    <div id="dropdown">
+    <label for="type">Select Link Type</label>
+      <select name="type" id="type">
+        <option value="regvid">Single Video</option>
+        <option value="playlist">Playlist</option>
+    </div>
+</select>
   </div>
   <iframe id= "vid" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <script>
   <script src="assets/js/youtube.js"></script>
 </body>
 </html>
