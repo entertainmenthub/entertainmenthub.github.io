@@ -1,4 +1,4 @@
-var buttonEl = document.getElementById("button");
+    var buttonEl = document.getElementById("button");
     var getVideo = function () {
       var url = document.getElementById("url").value;
       if (url == "Paste Link Here..." || url == "") {
@@ -15,7 +15,13 @@ var buttonEl = document.getElementById("button");
         vidCode = vidCode + url.charAt(i);
         i++;
       }
-      var embedLink = "https://www.youtube.com/embed/" + vidCode;
+      var embedLink = "";
+      if (document.getElementById("type").value == "playlist") {
+        embedLink = "https://www.youtube-nocookie.com/embed/videoseries?list=" + vidCode;
+      }
+      else {
+        embedLink = "https://www.youtube-nocookie.com/embed/" + vidCode;
+      }
       document.getElementById("vid").src = embedLink;
     }
-buttonEl.addEventListener("click", getVideo);
+    buttonEl.addEventListener("click", getVideo);
