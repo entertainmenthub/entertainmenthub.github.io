@@ -13,202 +13,10 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>eHub - Games</title>
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=WqIAK7MLJ10ND4eNkZskQx-sMzHu0JdmJibpU4WMoeFxzij6QiOBwUKHhYNi8VV_ly__xcDOy_0dbnbOhfGKTQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9qc2Jpbi5jb20vdm9sYWRvaC85L2Rvd25sb2Fk"/><style>
-     body {
-      background-color: black;
-      color: white;
-      font-family: "Courier New";
-      z-index: 4;
-      font-size: 1.6vw;
-    }
-    details {
-      z-index: 5;
-      float: left;
-      color: black;
-      background-color: white;
-      border: 3px transparent;
-      border-radius: 15px;
-      padding: 15px;
-      cursor: pointer;
-      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19); 
-      position: static;
-    }
-    #menuhead {
-      margin-top: 4%;
-      font-size: 2em;
-      transition-duration: 0.4s;
-    }
-    #menuhead:hover {
-      font-size: 2.5em;
-      transition-duration: 0.4s;
-    }
-    a {
-      display: block;
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      padding: 3%;
-      border: 1px transparent;
-      border-radius: 10px;
-      font-size: 1.5em;
-      transition-duration: 0.4s;
-    }
-    a:hover {
-      color: black;
-      background-color: white;
-      border: 1px solid black;
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      transition-duration: 0.4s;
-    }
-    .disabled {
-      opacity: 0.6;
-      pointer-events: none;
-    }
-    h1 {
-      width: 50vw;
-      padding: 15px;
-      margin-left: 15%;
-      margin: auto;
-      margin-top: 5%;
-      text-align: center;
-      font-size: 400%;
-      text-decoration: double underline overline 3px; 
-      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
-      border: 1px transparent;
-      border-radius: 15px;
-      transition-duration: 0.4s;
-    }
-    h1:hover {
-      font-size: 450%;
-      width: 55vw;
-      transition-duration: 0.4s;
-    }
-    #intro {
-      text-align: center;
-      font-size: 2em;
-      margin-top: 10%;
-    }
-    h2 {
-      font-size: 1.5em;
-      text-align: center;
-      text-decoration: underline;
-    }
-    .textleft {
-     float: left;  
-     border: 2px transparent;
-     background-color: white;
-     color: black;
-     border-radius: 15px;
-     font-size: 1.5em;
-     width: 45%;
-     box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
-     margin; 
-    }
-    .buttonlink {
-      text-align:center; 
-      margin-right: 3%; 
-      margin-top: 3%;
-    }
-    .textright {
-     float: right;  
-     border: 2px transparent;
-     background-color: white;
-     color: black;
-     border-radius: 15px;
-     font-size: 1.5em;
-     width: 45%;
-     box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);     
-    }
-    div p {
-      margin-left: 5%; 
-      margin-right: 2%;
-    }
-    .bottom {
-      margin-top: 5vw;
-      margin-bottom: 5vw;
-    }
-    .top {
-      margin-bottom: 5vw;
-    }
-    
-    /* VVV NOT IN SHEET VVV */
-    
-    b {
-      border-bottom: 2px solid white;
-    }
-    img {
-      opacity: 0.6;
-      border: 1px solid transparent;
-      border-radius: 7%;
-      width: 100%;
-      margin-left: -0.5%;
-      margin-right: -0.5%;
-      margin-top: 
-    }
-    .left-image {
-      float: left;
-      position: relative;
-      border: 1px solid transparent;
-      border-radius: 7%;
-      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);  
-      width: 45%;
-    }
-    .left-image > p {
-      position: absolute;
-      top: -7%;
-      left: -5%;
-      border: 1px solid transparent;
-      text-align: center;
-      padding: 2%;
-      background-color: black;
-      opacity: 0.6;
-      border-radius: 50px;
-      width: 96%;
-      margin-top: 5%;
-      margin-right: 2%;
-      padding-top: 5%;
-    }
-    .subtitle {
-      font-size: 1.5em;
-    }
-    div > a {
-      position: absolute;
-      bottom: 10%;
-      left: 20%;
-      width: 52%;
-      text-align: center;
-      cursor: pointer;
-    }
-    .desc {
-      font-size: 1.2em;
-    }
-    .right-image {
-      float: right;
-      position: relative;
-      border: 1px solid transparent;
-      border-radius: 7%;
-      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);  
-      width: 45%;
-    }
-    .right-image > p {
-      position: absolute;
-      top: -7%;
-      left: -5%;
-      border: 1px solid transparent;
-      text-align: center;
-      padding: 2%;
-      background-color: black;
-      opacity: 0.6;
-      border-radius: 50px;
-      width: 96%;
-      margin-top: 5%;
-      margin-right: 2%;
-      padding-top: 5%;
-    }
-    .bottom {
-      margin-top: 15%;
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/games.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=WqIAK7MLJ10ND4eNkZskQx-sMzHu0JdmJibpU4WMoeFxzij6QiOBwUKHhYNi8VV_ly__xcDOy_0dbnbOhfGKTQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9qc2Jpbi5jb20vdm9sYWRvaC85L2Rvd25sb2Fk"/>
 </head>
 <body>
    <details>
@@ -224,46 +32,33 @@ Released under the MIT license: http://jsbin.mit-license.org
   <p id="intro">Welcome to the games page! Click any game below to start playing!<br><b>This is a work in progress!</b></p>
   <br style="margin-top: 4%;">
   <div class="left-image">
-    <img src="https://raw.githubusercontent.com/entertainmenthub/entertainmenthub.github.io/main/assets/images/paperio.jpg">
+    <img src="/assets/images/paperio.jpg">
     <p><b class="subtitle">Paper IO 3</b><br><br><span class="desc">Welcome the world of multiplayer Paper.io 3 game. In the game, you need to move your mouse to get more space for yourself, but don't get caught by other paper io online players, because they want to kill you! Have fun and good luck!</span></p>
     <br>
     <a id="paperio">Play Paper IO 3</a>
   </div>
   <div class="right-image">
-    <img src="https://raw.githubusercontent.com/entertainmenthub/entertainmenthub.github.io/main/assets/images/reversi.jpg">
+    <img src="/assets/images/reversi.jpg">
     <p><b class="subtitle">Reversi Mania (Othello)</b><br><br><span class="desc">Sharpen your mind and test your strategical prowess with this time-tested game! Your goal is to flip your opponent's peices to your color before they can do the same!</span></p>
     <a id="reversi">Play Reversi Mania</a>
   </div>
   <br>
   <div class="left-image bottom">
-    <img src="https://raw.githubusercontent.com/entertainmenthub/entertainmenthub.github.io/main/assets/images/chess.jpg">
+    <img src="/assets/images/chess.jpg">
     <p><b class="subtitle">Chess</b><br><br><span class="desc">This is a classic chess game, defeat your opponent by capturing his king while tring to protect your piece from your enemy. Supports two people or against the computer. Enjoy!</span></p>
     <a id="chess">Play Chess</a>
   </div>
   <div class="right-image bottom">
-    <img src="https://raw.githubusercontent.com/entertainmenthub/entertainmenthub.github.io/main/assets/images/ctr-tt.jpg">
+    <img src="/assets/images/ctr-tt.jpg">
     <p><b class="subtitle">Cut the Rope: Time Travel</b><br><br><span class="desc">Join Om Nom as he travels back in time to feed his ancestors with candy. Cut the ropes to ensure that Om Nom gets his candy!</span></p>
     <a id="ctr-tt">Play Cut the Rope: TT</a>
   </div>
   <br>
   <div class="left-image bottom">
-    <img src="https://raw.githubusercontent.com/entertainmenthub/entertainmenthub.github.io/main/assets/images/slope.jpg">
+    <img src="/assets/images/slope.jpg">
     <p><b class="subtitle">Slope Cyber</b><br><br><span class="desc">Slope Cyber is an endless slope game in the cyber game genre. You have to control a slope ball in the cyber city. The ball moves and you have to have excellent reflexes to control it.</span></p>
     <a id="slope">Play Slope Cyber</a>
   </div>
-  <script>
-    const setUp = function () {
-      const paperioEl = document.getElementById("paperio");
-      const reversiEl = document.getElementById("reversi");
-      const chessEl = document.getElementById("chess");
-      const ctrttEl = document.getElementById("ctr-tt");
-      const slopeEl = document.getElementById("slope");
-    }
-    setUp();
-    const launchGame = function (e, gameName, ) {
-      
-    }
-    
-  </script>
+  <script src="/assets/js/gamesmenu.js"></script>
 </body>
 </html>
