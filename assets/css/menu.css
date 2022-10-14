@@ -3,6 +3,7 @@
       color: white;
       font-family: "Courier New";
       z-index: 4;
+      font-size: 1.6vw;
     }
     details {
       z-index: 5;
