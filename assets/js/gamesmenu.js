@@ -4,6 +4,7 @@
       const ctrttEl = document.getElementById("ctr-tt");
       const kartsEl = document.getElementById("karts");
       const shovelEl = document.getElementById("shovel");
+      const marketEl = document.getElementById("market");
       const launchGame = function (gameId) {
         localStorage.setItem("gameId", gameId);
         window.location.href = "/play";
@@ -14,3 +15,4 @@
       ctrttEl.addEventListener("click", function(){launchGame("ctrtt");});
       kartsEl.addEventListener("click", function(){launchGame("karts");}); 
       shovelEl.addEventListener("click", function(){launchGame("shovel");});
+      marketEl.addEventListener("click", function(){launchGame("market");});
