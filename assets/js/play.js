@@ -25,9 +25,9 @@
     console.log(gameId);
 
     const setUp = function () {
-      document.getElementById("game").src = gameId.url;
-      document.getElementById("title").textContent = gameId.name;
-      document.getElementById("head").textContent = "eHub - " + gameId.name;
+      document.getElementById("game").src = gameId.value.url;
+      document.getElementById("title").textContent = gameId.value.name;
+      document.getElementById("head").textContent = "eHub - " + gameId.value.name;
     }
     
     setUp();
