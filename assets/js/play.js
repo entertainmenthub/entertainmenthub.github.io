@@ -25,9 +25,16 @@
     console.log(gameId);
 
     const setUp = function () {
-      document.getElementById("game").src = gameId.value.url;
-      document.getElementById("title").textContent = gameId.value.name;
-      document.getElementById("head").textContent = "eHub - " + gameId.value.name;
+      if (gameId == karts)  {
+          document.getElementById("game").src = karts.url;
+          document.getElementById("title").textContent = karts.name;
+          document.getElementById("head").textContent = "eHub - " + karts.name;
+      }
+      if (gameId == br)  {
+          document.getElementById("game").src = br.url;
+          document.getElementById("title").textContent = br.name;
+          document.getElementById("head").textContent = "eHub - " + br.name;
+      }
     }
     
     setUp();
