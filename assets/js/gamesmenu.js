@@ -4,9 +4,8 @@
       const ctrttEl = document.getElementById("ctr-tt");
       const slopeEl = document.getElementById("slope");
       const launchGame = function (gameId) {
-        console.log(gameId);
         localStorage.setItem("gameId", gameId);
-        window.location.href = "/play.html";
+        window.location.href = "/play";
       }
       paperioEl.addEventListener("click", function(){launchGame("paperio");});
       reversiEl.addEventListener("click", function(){launchGame("reversi");});
