@@ -1,5 +1,5 @@
-      const paperioEl = document.getElementById("paperio");
-      const reversiEl = document.getElementById("reversi");
+      const brEl = document.getElementById("br");
+      const 1v1El = document.getElementById("1v1");
       const chessEl = document.getElementById("chess");
       const ctrttEl = document.getElementById("ctr-tt");
       const slopeEl = document.getElementById("slope");
@@ -7,8 +7,8 @@
         localStorage.setItem("gameId", gameId);
         window.location.href = "/play";
       }
-      paperioEl.addEventListener("click", function(){launchGame("paperio");});
-      reversiEl.addEventListener("click", function(){launchGame("reversi");});
+      brEl.addEventListener("click", function(){launchGame("br");});
+      1v1El.addEventListener("click", function(){launchGame("1v1");});
       chessEl.addEventListener("click", function(){launchGame("chess");});
       ctrttEl.addEventListener("click", function(){launchGame("ctrtt");});
       slopeEl.addEventListener("click", function(){launchGame("slope");});  
