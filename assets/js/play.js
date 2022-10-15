@@ -25,12 +25,12 @@
     console.log(gameId);
 
     const setUp = function () {
-      if (gameId == karts)  {
+      if (gameId == "karts")  {
           document.getElementById("game").src = karts.url;
           document.getElementById("title").textContent = karts.name;
           document.getElementById("head").textContent = "eHub - " + karts.name;
       }
-      if (gameId == br)  {
+      if (gameId == "br")  {
           document.getElementById("game").src = br.url;
           document.getElementById("title").textContent = br.name;
           document.getElementById("head").textContent = "eHub - " + br.name;
