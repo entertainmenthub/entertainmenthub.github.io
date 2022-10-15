@@ -22,11 +22,12 @@
     
     const gameId = localStorage.getItem('gameId');
 
-    consloe.log(gameId);
+    console.log(gameId);
 
     const setUp = function () {
       document.getElementById("game").src = gameId.url;
       document.getElementById("title").textContent = gameId.name;
       document.getElementById("head").textContent = "eHub - " + gameId.name;
     }
+    
     setUp();
