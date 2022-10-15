@@ -22,6 +22,8 @@
     
     const gameId = localStorage.getItem('gameId');
 
+    consloe.log(gameId);
+
     const setUp = function () {
       document.getElementById("game").src = gameId.url;
       document.getElementById("title").textContent = gameId.name;
