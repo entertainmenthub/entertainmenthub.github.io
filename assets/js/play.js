@@ -35,6 +35,21 @@
           document.getElementById("title").textContent = br.name;
           document.getElementById("head").textContent = "eHub - " + br.name;
       }
+      if (gameId == "lol")  {
+          document.getElementById("game").src = lol.url;
+          document.getElementById("title").textContent = lol.name;
+          document.getElementById("head").textContent = "eHub - " + lol.name;
+      }
+      if (gameId == "chess")  {
+          document.getElementById("game").src = chess.url;
+          document.getElementById("title").textContent = chess.name;
+          document.getElementById("head").textContent = "eHub - " + chess.name;
+      }
+      if (gameId == "ctrtt")  {
+          document.getElementById("game").src = ctrtt.url;
+          document.getElementById("title").textContent = ctrtt.name;
+          document.getElementById("head").textContent = "eHub - " + ctrtt.name;
+      }
     }
     
     setUp();
