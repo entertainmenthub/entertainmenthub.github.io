@@ -22,11 +22,13 @@
         name: "Shovel 3D",
         url: "https://www.crazygames.com/embed/shovel-3d",
     };
+    const market = {
+        name: "Market Boss",
+        url: "https://www.crazygames.com/embed/market-boss",
+    };
     
     
     const gameId = localStorage.getItem('gameId');
-
-    console.log(gameId);
 
     const setUp = function () {
       if (gameId == "karts")  {
@@ -58,6 +60,11 @@
           document.getElementById("game").src = shovel.url;
           document.getElementById("title").textContent = shovel.name;
           document.getElementById("head").textContent = "eHub - " + shovel.name;
+      }
+      if (gameId == "market") {
+          document.getElementById("game").src = market.url;
+          document.getElementById("title").textContent = market.name;
+          document.getElementById("head").textContent = "eHub - " + market.name;
       }
     }
     
