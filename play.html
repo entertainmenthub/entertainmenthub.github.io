@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by NatKingCoder (http://jsbin.com/kipodiq/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title id="head">eHub - [GAMENAME]</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9XrEQR3SUlcRxn-xPqgkeI16XZ849Cj6afvJ2DBsLH5z9HqWgqF0L7rzfVwMZHIki9RxIUBKYfuV4GY2KSMkzQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9qc2Jpbi5jb20va2lwb2RpcS80L2Rvd25sb2Fk"/><style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Courier New";
+      z-index: 4;
+      font-size: 1.6vw;
+    }
+    details {
+      z-index: 5;
+      float: left;
+      color: black;
+      background-color: white;
+      border: 3px transparent;
+      border-radius: 15px;
+      padding: 15px;
+      cursor: pointer;
+      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19); 
+      position: static;
+    }
+    #menuhead {
+      margin-top: 4%;
+      font-size: 2em;
+      transition-duration: 0.4s;
+    }
+    #menuhead:hover {
+      font-size: 2.5em;
+      transition-duration: 0.4s;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 3%;
+      border: 1px transparent;
+      border-radius: 10px;
+      font-size: 1.5em;
+      transition-duration: 0.4s;
+    }
+    a:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      transition-duration: 0.4s;
+    }
+    .disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    h1 {
+      width: 50vw;
+      padding: 15px;
+      margin-left: 15%;
+      margin: auto;
+      margin-top: 5%;
+      text-align: center;
+      font-size: 400%;
+      text-decoration: underline overline double 3px;  
+      box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+      border: 1px transparent;
+      border-radius: 15px;
+      transition-duration: 0.4s;
+    }
+    h1:hover {
+      font-size: 450%;
+      width: 55vw;
+      transition-duration: 0.4s;
+    }
+    #intro {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .textleft {
+     float: left;  
+     border: 2px transparent;
+     background-color: white;
+     color: black;
+     border-radius: 15px;
+     font-size: 1.5em;
+     width: 45%;
+     box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);
+     margin; 
+    }
+    .buttonlink {
+      text-align:center; 
+      margin-right: 3%; 
+      margin-top: 3%;
+    }
+    .textright {
+     float: right;  
+     border: 2px transparent;
+     background-color: white;
+     color: black;
+     border-radius: 15px;
+     font-size: 1.5em;
+     width: 45%;
+     box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24), 0 17px 50px 0 rgba(255,255,255,0.19);     
+    }
+    div p {
+      margin-left: 5%; 
+      margin-right: 2%;
+    }
+    .bottom {
+      margin-top: 5vw;
+      margin-bottom: 5vw;
+    }
+    .top {
+      margin-bottom: 5vw;
+    }
+  </style>
+</head>
+<body>
+  <details>
+    <summary id="menuhead">Menu</summary>
+    <a href="/games" style="margin-top: 7%;">Games</a>
+    <br>
+    <a href="/yt">YouTube</a>
+    <br>
+    <a href="/">Home</a>
+  </details>
+  <h1 id="title">[GAMENAME]</h1>
+  <br>
+  <iframe src="" width="100%" height="1000" frameborder="0" allow="gamepad *;" id="game" style="margin-top: 5%;"></iframe>
+
+  <!--
+<iframe src="https://www.crazygames.com/embed/cut-the-rope-time-travel" width="100%" height="680" frameborder="0" allow="gamepad *;"></iframe>
+<iframe src="https://www.crazygames.com/embed/master-chess" width="100%" height="680" frameborder="0" allow="gamepad *;"></iframe>
+<iframe src="https://www.crazygames.com/embed/buildroyale-io" width="100%" height="680" frameborder="0" allow="gamepad *;"></iframe>
+<iframe src="https://www.crazygames.com/embed/1v1-lol"  width="100%" height="680" frameborder="0" allow="gamepad *;"></iframe>
+<iframe src="https://www.crazygames.com/embed/smash-karts" width="100%" height="680" frameborder="0" allow="gamepad *;"></iframe>
+  -->
+  
+  <script>
+    const karts = {
+      name: "Smash Karts",
+      url: "https://www.crazygames.com/embed/smash-karts",
+    };
+    const br = {
+      name: "Build Royale.io",
+      url: "https://www.crazygames.com/embed/buildroyale-io",
+    };
+    const lol = {
+      name: "1v1 LOL",
+      url: "https://www.crazygames.com/embed/1v1-lol",
+    };
+    const chess = {
+      name: "Master Chess",
+      url: "https://www.crazygames.com/embed/master-chess",
+    };
+    const ctrtt = {
+      name: "Cut the Rope: Time Travel",
+      url: "https://www.crazygames.com/embed/cut-the-rope-time-travel",
+    };
+    
+    
+    const gameId = localStorage.getItem("gameId");
+    const setUp = function () {
+      document.getElementById("game").src = gameId.url;
+      document.getElementById("title").textContent = gameId.name;
+      document.getElementById("head").textContent = "eHub - " + gameId.name;
+    }
+    setUp();
+;  </script>
