@@ -18,6 +18,10 @@
       name: "Cut the Rope: Time Travel",
       url: "https://www.crazygames.com/embed/cut-the-rope-time-travel",
     };
+    const shovel = {
+        name: "Shovel 3D",
+        url: "https://www.crazygames.com/embed/shovel-3d",
+    };
     
     
     const gameId = localStorage.getItem('gameId');
@@ -49,6 +53,11 @@
           document.getElementById("game").src = ctrtt.url;
           document.getElementById("title").textContent = ctrtt.name;
           document.getElementById("head").textContent = "eHub - " + ctrtt.name;
+      }
+      if (gameId == "shovel") {
+          document.getElementById("game").src = shovel.url;
+          document.getElementById("title").textContent = shovel.name;
+          document.getElementById("head").textContent = "eHub - " + shovel.name;
       }
     }
     
