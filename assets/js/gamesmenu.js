@@ -3,6 +3,7 @@
       const chessEl = document.getElementById("chess");
       const ctrttEl = document.getElementById("ctr-tt");
       const kartsEl = document.getElementById("karts");
+      const shovelEl = document.getElementById("shovel");
       const launchGame = function (gameId) {
         localStorage.setItem("gameId", gameId);
         window.location.href = "/play";
@@ -11,4 +12,5 @@
       lolEl.addEventListener("click", function(){launchGame("lol");});
       chessEl.addEventListener("click", function(){launchGame("chess");});
       ctrttEl.addEventListener("click", function(){launchGame("ctrtt");});
-      kartsEl.addEventListener("click", function(){launchGame("karts");});  
+      kartsEl.addEventListener("click", function(){launchGame("karts");}); 
+      shovelEl.addEventListener("click", function(){launchGame("shovel");});
