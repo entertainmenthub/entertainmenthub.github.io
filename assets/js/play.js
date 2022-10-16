@@ -26,6 +26,10 @@
         name: "Market Boss",
         url: "https://www.crazygames.com/embed/market-boss",
     };
+    const ovo = {
+        name: "OvO",
+        url: "https://www.crazygames.com/embed/ovo",
+    };
     
     
     const gameId = localStorage.getItem('gameId');
@@ -66,6 +70,12 @@
           document.getElementById("title").textContent = market.name;
           document.getElementById("head").textContent = "eHub - " + market.name;
       }
+      if (gameId == "ovo") {
+          document.getElementById("game").src = ovo.url;
+          document.getElementById("title").textContent = ovo.name;
+          document.getElementById("head").textContent = "eHub - " + ovo.name;
+      }  
+        
     }
     
     setUp();
