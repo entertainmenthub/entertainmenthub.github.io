@@ -1,7 +1,7 @@
     var buttonEl = document.getElementById("button");
     var getVideo = function () {
       var url = document.getElementById("url").value;
-      if (url == "Paste Link Here..." || url == "") {
+      if (url == "") {
         alert("Error: No link inputted");
       }
       var char = "";
